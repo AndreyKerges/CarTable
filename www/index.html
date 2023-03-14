@@ -1,0 +1,59 @@
+<DOCTYPE HTML>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calcular</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script type="text/javascript" src="components/engine.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="olamundo()">
+    <div class="fundo">
+    <form class="container">
+ 
+ <h3 class="carro">Escolha a marca do seu veículo, e calcule o consumo de gasolina</h3>
+
+
+	<input type="number" placeholder="Insira a kmm percorrida" id="km">
+    <input type="number" placeholder="Insira o consumo de gasolina" id="gas">
+    <button onclick="calcularconsumo()">Calcular</button>
+    <br>
+
+
+   <div class="linha">
+    <span id="consumo"></span>
+    <span>
+        <h3 style="font-family: Arial;">KM/L</h3>
+    </span>
+</div>
+
+
+<table border="3px">
+  <tr id="Extremamente">
+    <td><=20km/l | Extremamente Econômico</td>
+
+  </tr>
+  <tr id="Economico">
+    <td> <=12km/l---->20km/l | Econômico</td>
+
+  </tr>
+  <tr id="Normal">
+    <td> <=8km/l---->12km/l | Normal</td>
+
+  </tr>
+  <tr id="Alto">
+    <td>>8km/l | Alto consumo</td>
+
+  </tr>
+</table>
+
+
+    </form>
+</div>
+</body>
+</html>
